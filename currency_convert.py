@@ -10,7 +10,7 @@ import sys
 import argparse
 
 parser = argparse.ArgumentParser(description='Process to convert USD to Euro in CSV, \
-    Example:./cctest1.py -i input/sample.csv -o output/outcome2.csv --f 1 --m 1.8')
+    Example:./currency_convert.py -i input/sample.csv -o output/outcome2.csv --f 1 --m 1.8')
 parser.add_argument('-i','--input', help='Input file path')
 parser.add_argument('-o', '--output', help='Output file path')
 parser.add_argument('-f', '--field', type = int, help='Convert CSV field N, Use intger.')
