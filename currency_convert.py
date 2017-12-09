@@ -39,10 +39,7 @@ def cconvert1(input_file, output_file, multiplier, field):
                     csvwriter.writerows([row])
                     print (row)
                 except ValueError:
-                    csvwriter.writerows([row])
-                
-             
-                  
+                    csvwriter.writerows([row])               
         incsv.close()
     print ('Convert completed.')  
 cconvert1(input_file, output_file, multiplier, field)
