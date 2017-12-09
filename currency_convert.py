@@ -34,7 +34,7 @@ def cconvert1(input_file, output_file, multiplier, field):
                     oldprice = float(row[field])
                     newprice = oldprice * multiplier
                     rowtemp = str(float(row[field]) *multiplier)
-                    # Need to write a process to replace "." with ","
+                    # Need to replace "." with ","
                     row[field] = rowtemp.replace('.',',',1)
                     csvwriter.writerows([row])
                     print (row)
